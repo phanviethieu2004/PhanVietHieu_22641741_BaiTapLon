@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chitiet.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script>
+        // JavaScript để tăng/giảm số lượng sản phẩm
+        function increment() {
+          var quantityElement = document.getElementById("quantity");
+          var quantity = parseInt(quantityElement.textContent);
+          quantity++;
+          quantityElement.textContent = quantity;
+        }
+      
+        function decrement() {
+          var quantityElement = document.getElementById("quantity");
+          var quantity = parseInt(quantityElement.textContent);
+          if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+          }
+        }
+      </script>
+</head>
+<body>
+
+    <header>
+        <img src="../img/logo.png" alt="" srcset="">
+        <div class="container">
+          <h1 class="mb-0">Giao diện bán hàng</h1>
+          <p class="lead mb-0">Mua sắm dễ dàng và nhanh chóng</p>
+        </div>
+        <div>
+          <form class="header-form">    
+            <button type="button" class="lbDN" id="btnOpenDN">Đăng nhập</button>
+            <button type="button" class="lbDK" id="btnOpenDK">Đăng ký</button>
+          </form>
+        </div>
+    </header>
+
+      <!---->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Giỏ hàng</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="form-search">
+            <input type="text" name="" id="txtSearch" size="30px" placeholder="Search">
+            <button type="button" class="btnSearch bg-primary">Search</button>
+          </div>
+        </div>
+    </nav>
+
+      <!---->
+      <div>
+        <ul class="menu-mini">
+            <li class="item"><a href="#" class="link">Trang chủ</a></li>
+            <li class="item"><a href="#" class="link">Xem chi tiết</a></li>
+        </ul>
+      </div>
+      <!---->
+      <div class="sanPham">
+        <img src="../img/sanpham4.jpg" alt="" srcset="">
+        <p class="tenSP">Máy hút bụi khô và ướt Makita VC2000L</p>
+        <div class="thuocTinh">
+            <p>Thương hiệu: xiaomi | Mã SP:</p>
+            <p><span>4.675.000 đ</span></p>
+        </div>
+
+        <div class="motaSanPham">
+            <p>Loại máy hútDùng pin Lực hút10.000 Pa Chức năngHút bụi và Lau nhà Diện tích sử dụng200m2 
+                Dung tích chứa bụi900ml Dung tích ngăn chứa nước700ml Dung lượng pinTổng 6 viên (64.000 mAh) 
+                Thời gian sạc pin5 giờ Thời gian sử dụng36 phút Công suất200W Trọng lượng sản phẩm4,9kg Xuất xứ thương...</p>
+        </div>
+        
+        <div class="soLuong">
+            <span>Quantity: </span>
+            <button onclick="decrement()">-</button>
+            <span id="quantity">1</span>
+            <button onclick="increment()">+</button>
+            <button type="button" class="btnThem btn-danger">Thêm vào giỏ hàng</button>
+        </div>
+
+        <div class="dichVu">
+            <div class="dv1">
+                <img src="../img/giaohang.png" class="img1" alt="" srcset="">
+                <p>GIAO HÀNG TẬN NƠI</p>
+            </div>
+            <div class="dv1">
+                <img src="../img/thanhtoan.png" class="img1" alt="" srcset="">
+                <p>Thanh toán khi nhận hàng</p>
+                <p style="font-size: small; padding-top: 0px;">Bạn thoải mái nhận & kiểm tra hàng trước khi trả tiền.</p>
+            </div>
+            <div class="dv1">
+                <img src="../img/doitra.png" class="img1" alt="" srcset="">
+                <p>ĐỔI TRẢ TRONG VÒNG 7 NGÀY</p>
+                <p style="font-size: small; padding-top: 0px;">Dễ dàng đổi trả sản phẩm trong 7 ngày đầu tiên</p>
+            </div>
+            <div class="dv1">
+                <img src="../img/baohanh.png" class="img1" alt="" srcset="">
+                <p>BẢO HÀNH CHÍNH HÃNG</p>
+                <p style="font-size: small; padding-top: 0px;">Bạn thoải mái nhận & kiểm tra hàng trước khi trả tiền.</p>
+            </div>
+            <div class="dv1">
+                <img src="../img/CSKH.png" class="img1" alt="" srcset="">
+                <p>ĐẶT HÀNG ONLINE</p>
+                <p style="font-size: small; padding-top: 0px;">Gọi ngay 0123 456 789 để mua và đặt hàng nhanh chóng</p>
+            </div>
+        </div>
+     </div>
+
+
+     <div class="chiTietMoTa">
+        <div class="CTMT">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1">Mô tả</a> </li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2">Đánh giá</a></li>
+            </ul>
+
+            <div class="tab-content mt-2">
+                <div id="tab1" class="tab-pane fade show active">
+                    <h2>Thông số kỹ thuật</h2>
+                    <ul>
+                    <li><strong>Loại máy hút:</strong> Dùng pin</li>
+                    <li><strong>Lực hút:</strong> 10.000 Pa</li>
+                    <li><strong>Chức năng:</strong> Hút bụi và Lau nhà</li>
+                    <li><strong>Diện tích sử dụng:</strong> 200m2</li>
+                    <li><strong>Dung tích chứa bụi:</strong> 900ml</li>
+                    <li><strong>Dung tích ngăn chứa nước:</strong> 700ml</li>
+                    <li><strong>Dung lượng pin:</strong> Tổng 6 viên (64.000 mAh)</li>
+                    <li><strong>Thời gian sạc pin:</strong> 5 giờ</li>
+                    <li><strong>Thời gian sử dụng:</strong> 36 phút</li>
+                    <li><strong>Công suất:</strong> 200W</li>
+                    <li><strong>Trọng lượng sản phẩm:</strong> 4,9kg</li>
+                    <li><strong>Xuất xứ thương hiệu:</strong> Trung Quốc</li>
+                    <li><strong>Sản xuất tại:</strong> Trung Quốc</li>
+                    <li><strong>Bảo hành:</strong> 18 tháng</li>
+                    </ul>
+
+                    <h2>Giới thiệu máy hút bụi lau sàn khô và ướt Xiaomi Dreame H12 Pro</h2>
+                    <p>Máy hút bụi Dreame H12 Pro là phiên bản cao cấp toàn diện của dòng máy Dreame H series có khả năng vừa hút vừa lau tiện lợi. Thiết bị được cải tiến nhiều điểm trong thiết kế cũng như tính năng nhằm cải thiện hiệu năng làm sạch.</p>
+                    <h2>Thiết kế ấn tượng</h2>
+                    <p>Máy hút bụi đa năng Xiaomi Dreame H12 Pro sở hữu thiết kế sang trọng và hiện đại. Trong đó máy vẫn tiếp nối các tinh hoa của dòng máy trước và đổi mới cũng như nâng cấp thêm cuộc lăn tràn 2 bên cạnh.</p>
+                    <h2>Trọng lượng nhẹ và màn hình hiển thị tiện dụng</h2>
+                    <p>Máy hút bụi lau sàn khô và ướt Xiaomi Dreame H12 Pro có trọng lượng nhẹ giúp việc di chuyển dễ dàng hơn. Màn hình hiển thị mới cung cấp thông tin và tiện dụng hơn. Hệ thống có hỗ trợ các cảm biến cùng chỉ dẫn giọng nói, tạo ra trải nghiệm sử dụng thuận tiện và hiệu quả.</p>
+
+                    <h2>Tự làm sạch thông minh</h2>
+                    <p>Máy tích hợp chức năng tự làm sạch tự động chỉ với một nút nhấn. Theo đó, cuộn lăn được sấy bằng không khí nóng trong 1.5 giờ giúp ngăn chặn mùi, nấm mốc và vi khuẩn phát triển. Chức năng này giúp bảo quản máy hút bụi và duy trì hiệu suất làm sạch cao.</p>
+
+
+                </div>
+                <div id="tab2" class="tab-pane fade">
+                  <h3>Chưa có đánh giá</h3>
+                </div>
+              </div>
+            </div>
+
+        </div>
+     </div>
+
+     
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Giao diện bán hàng. All rights reserved.</p>
+            <p>Liên hệ: email@example.com | Số điện thoại: 0123 456 789</p>
+        </div>
+    </footer>
+</body>
+
+</html>

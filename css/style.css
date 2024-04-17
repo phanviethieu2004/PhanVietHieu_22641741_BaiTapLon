@@ -1,0 +1,155 @@
+[class*=col-]{
+  padding: 0px;
+  margin: 0px;
+}
+/* Định dạng header */
+header {
+  position: relative;
+  height: 100px;
+  background-color: rgb(32, 123, 193);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header img{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  height: 100px;
+}
+/* Định dạng menu */
+nav {
+  background-color: #e3f2fd;
+  padding: 10px 0;
+}
+#txtSearch{
+  border: rgb(32, 123, 193) solid 1px;
+  border-radius: 15px 15px 15px 15px;
+}
+.btnSearch{
+  border-radius: 15px 15px 15px 15px;
+}
+
+.nav .nav-item:hover>.nav-link{
+  color: rgb(233, 233, 19);
+  background-color: #9dacbc;
+  font-weight: bold;
+}
+
+.nav .lienhe{
+  position: absolute;
+  display: none;
+}
+
+.nav li:hover .lienhe{
+  display: block;
+  
+}
+
+/* Định dạng footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Định dạng card */
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-footer{
+    opacity: 1;
+}
+
+.card-footer .btnThem{
+    font-size: 14px;
+}
+.card-footer .btnMua{
+  font-size: 14px;
+}
+/*định dạng form đăng nhập, đăng ký*/
+
+.lbDN{
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(32, 123, 193);
+    color: #fff;
+    border-color: rgb(32, 123, 193);
+    border-radius: 0px 0px 10px 0px;
+}
+
+.lbDN:hover{
+  background-color: #0056b3;
+}
+
+.lbDK{
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(32, 123, 193);
+    color: #fff;
+    border-color: rgb(32, 123, 193);
+    border-radius: 0px 0px 10px 0px;
+}
+
+.lbDK:hover{
+  background-color: #0056b3;
+}
+
+.header-form{
+  position: absolute;
+  width: 250px;
+  right: 0px;
+  top: 50px;
+}
+
+/*Cấu hình modal*/
+.lbQMK{
+  width: 100%;
+
+}
+
+.btnDN_modal{
+  width: 100%;
+  text-align: center;
+}
+
+.btnDK-modal{
+  border: #fff;
+  background-color: #fff;
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.btnDK-modal:hover{
+  color: cadetblue;
+}
+
+.btnDK_modalDK{
+  width: 100%;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.title-footer {
+  order: 1; /* Đặt thứ tự 1 để nó hiển thị trước tiên */
+}
+
+
