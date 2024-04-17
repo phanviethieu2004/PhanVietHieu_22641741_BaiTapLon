@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giao diện bán hàng</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  
+  <script src="../js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+  
+<header>
+  <img src="../img/logo.png" alt="" srcset="">
+  <div class="container">
+    <h1 class="mb-0">Giao diện bán hàng</h1>
+    <p class="lead mb-0">Mua sắm dễ dàng và nhanh chóng</p>
+  </div>
+  <div>
+    <form class="header-form">    
+      <button type="button" class="lbDN" id="btnOpenDN">Đăng nhập</button>
+      <button type="button" class="lbDK" id="btnOpenDK">Đăng ký</button>
+    </form>
+  </div>
+</header>
+
+<!--Carousel-->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 p-3">
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-width: 100%; max-height: 700px;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../img/header1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/header1.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/header1.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <!-- 2 anh doc lap -->
+      <div class="row">
+        <div class="col-md-12 p-3">
+          <img class="img-fluid" src="../img/header1.1.png" alt="External Image 1" style="width: 320px;">
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-3">
+          <img class="img-fluid" src="../img/header1.2.png" alt="External Image 1" style="width: 320px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="danhsachsanpham.html">Sản phẩm</a></li>
+        <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a>
+          <div class="lienhe">
+            <p>Liên hệ: 0123 456 789</p>
+            <p>Thời gian hoạt động</p>
+            <p>8h00-21h00</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="form-search">
+      <input type="text" name="" id="txtSearch" size="30px" placeholder="Search">
+      <button type="button" class="btnSearch bg-primary">Search</button>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div class="container mt-4">
+  <h2 class="mb-4">Sản phẩm nổi bật</h2>
+  
+  <!-- Danh sách sản phẩm -->
+  <!--sp1-->
+  <div class="row">
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" id="img" src="../img/sanpham1.webp" alt="Ảnh sản phẩm">
+        <div class="card-body">
+          <h4 class="card-title" id="name">Máy Hút Bụi Lau Sàn Cầm Tay Khô Và Ướt Thông Minh Xiaomi Dreame H12</h4>
+          <h5 id="gia">10.900.000 ₫</h5>
+          <p class="card-text">***</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btnThem btn-primary">Thêm vào giỏ hàng</button>
+          <button type="button" class="btnMua btn-success">Mua</button>
+          <a href="detailProduct1.html" >Chi tiết sản phẩm</a>
+        </div>
+      </div>
+    </div>
+    <!--sp2-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="../img/sanpham2.webp" alt="Ảnh sản phẩm" height="45%">
+        <div class="card-body">
+          <h4 class="card-title">Máy Hút Bụi Dyson V12 Detect Slim Total Clean (Vàng/Sắt/Nickel)</h4>
+          <h5>11.900.000 ₫</h5>
+          <p class="card-text">***</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btnThem btn-primary">Thêm vào giỏ hàng</button>
+          <button type="button" class="btnMua btn-success">Mua</button>
+          <a href="detailProduct2.html" >Chi tiết sản phẩm</a>
+        </div>
+      </div>
+    </div>
+    <!--sp3-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="../img/sanpham3.jpg" alt="Ảnh sản phẩm" height="45%">
+        <div class="card-body">
+          <h4 class="card-title">Máy Hút Bụi Không Dây Cầm Tay Redroad V17 – Lực Hút Vô Địch</h4>
+          <h5>6.129.000 đ</h5>
+          <p class="card-text">***</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btnThem btn-primary">Thêm vào giỏ hàng</button>
+          <button type="button" class="btnMua btn-success">Mua</button>
+          <a href="detailProduct3.html" >Chi tiết sản phẩm</a>
+        </div>
+      </div>
+      </div>
+<!--sp4-->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="../img/sanpham4.jpg" alt="Ảnh sản phẩm" height="45%">
+          <div class="card-body">
+            <h4 class="card-title">Máy hút bụi khô và ướt Makita VC2000L</h4>
+            <h5>4.675.000 đ</h5>
+            <p class="card-text">***</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btnThem btn-primary">Thêm vào giỏ hàng</button>
+            <button type="button" class="btnMua btn-success">Mua</button>
+            <a href="detailProduct4.html" >Chi tiết sản phẩm</a>
+          </div>
+        </div>
+      </div>
+    <!-- Thêm các sản phẩm khác tương tự ở đây -->
+  </div>
+</div>
+
+<!--Modal đăng nhập-->
+<div class="row">
+  <div class="col">
+    <div class="modal" id="myModalDN">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="title">Đăng nhập</div>
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="" id="lbTDN">Tên đăng nhập:</label>
+                <input type="text" class="form-control" id="txtTDN" placeholder="Số điện thoại hoặc email">
+              </div>
+              <div class="form-group">
+                <label for="" id="lbMK">Mật khẩu:</label>
+                <input type="text" class="form-control" id="txtMK" placeholder="Mật khẩu">
+              </div>
+              <label for="QMK" class="lbQMK">Quên mật khẩu?</label>
+              <button type="submit" class="btnDN_modal">Đăng nhập</button>
+            </form>
+            <div class="col-md-12 text-center">
+              <label for="">Bạn chưa có tài khoản?</label>
+              <button type="button" class="btnDK-modal">Đăng ký</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="title-footer text-muted">hoặc bằng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal đăng ký-->
+<div class="row">
+  <div class="col">
+    <div class="modal" id="myModalDK">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="title">Đăng ký</div>
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="frmDangKy">
+              <div class="form-group">
+                <label for="" id="lbTDN">Tên đăng nhập:</label>
+                <input type="text" class="form-control" id="DKTDN" placeholder="Số điện thoại hoặc email">
+              </div>
+              <div class="form-group">
+                <label for="" id="lbMK">Mật khẩu:</label>
+                <input type="text" class="form-control" id="DKMK" placeholder="Mật khẩu">
+              </div>
+              <div class="form-group">
+                <label for="" id="lbEmail">Địa chỉ email:</label>
+                <input type="text" class="form-control" id="DKEmail" placeholder="Email">
+              </div>
+              <button type="submit" class="btnDK_modalDK">Đăng ký</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="title-footer text-muted">hoặc bằng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Giao diện bán hàng. All rights reserved.</p>
+    <p>Liên hệ: email@example.com | Số điện thoại: 0123 456 789</p>
+  </div>
+</footer>
+</body>
+
+<script>
+  const inputUsernameRegister = document.querySelector("#DKTDN");
+  const inputPasswordRegister = document.querySelector("#DKMK");
+  const email = document.querySelector("#DKEmail");
+  const btnRegister = document.querySelector(".btnDK_modalDK");
+
+  btnRegister.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (
+    inputUsernameRegister.value === "" ||
+    inputPasswordRegister.value === "" ||
+    email.value === ""
+
+  ) {
+    alert("vui lòng không để trống");
+  } else {
+    // array user
+    const user = {
+      username: inputUsernameRegister.value,
+      password: inputPasswordRegister.value,
+      email: email.value,
+    };
+    let json = JSON.stringify(user);
+    localStorage.setItem(inputUsernameRegister.value, json);
+    alert("Đăng Ký Thành Công");
+    window.location.href = "index.html";
+  }
+});
+
+</script>
+<script src="../js/js1.js"></script>
+</html>
